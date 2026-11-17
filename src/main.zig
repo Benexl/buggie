@@ -40,7 +40,7 @@ fn handle_events(game_context: *GameContext) void {
     while (Sdl3.pollEvent()) |event| {
         if (event.type == .quit) {
             game_context.running = false;
-        } else if (event.type == .key_down and event.key == .k_escape) {
+        } else if (event.type == .key_down and event.key == .escape) {
             game_context.running = false;
         } else {
             break;
